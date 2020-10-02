@@ -1,0 +1,25 @@
+﻿<Window x:Class="SpotlightTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SpotlightTest"
+        xmlns:shell="Microsoft.Wind"
+        mc:Ignorable="d"
+        Title="Spotlight" Width="500" Height="40"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None" Topmost="True" Background="White"
+        Deactivated="Window_Deactivated">
+    <WindowChrome.WindowChrome>
+        <WindowChrome ResizeBorderThickness="0" CaptionHeight="0"/>
+    </WindowChrome.WindowChrome>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="40"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Image x:Name="Icon" Grid.Column="0" Width="24" Height="24" Source="/Images/icons8-search-24 (1).png"/>
+        <TextBox x:Name="Text" Grid.Column="1" Text="YouTube : " Foreground="Black"
+                 FontSize="16" VerticalAlignment="Center" BorderThickness="0"/>
+    </Grid>
+</Window>
